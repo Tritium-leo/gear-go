@@ -1,0 +1,35 @@
+version: "0.0.0.0"
+# db
+postgres:
+  username: "postgres"
+  password: ""
+  address: "localhost"
+  dbName: "test_db"
+  sslmode: "disable"
+  logMode: true
+
+mysql:
+  Username: root
+  Password: root
+  Address: localhost
+  Port: 3306
+  LogMode: true
+
+# nosql
+redis:
+  host: tcp:127.0.0.1:6379
+  maxOpenConn: 100
+  maxIdleConn: 100
+  ssl: false
+  idleTimeout:
+
+# mq
+rabbitmq:
+  userName: guest
+  password: guest
+  address: localhost
+  port: 5672
+
+#
+test:
+  float_test: 3.5
